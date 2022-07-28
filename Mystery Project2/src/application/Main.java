@@ -28,3 +28,4 @@ public class Main extends Application {
 		gameData.loadCharacterData("CharacterData/Character1.csv");		}
 	
 }
+ 
