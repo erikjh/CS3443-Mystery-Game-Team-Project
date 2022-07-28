@@ -16,7 +16,7 @@ public class SceneController {
 		private Scene scene;
 		private Parent root;
 		
-		@FXML
+		
 		public void switchToMenu(ActionEvent event) throws IOException {
 		    root = FXMLLoader.load(getClass().getResource("/application/view/MainMenu.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -25,7 +25,7 @@ public class SceneController {
 			stage.show();
 		}
 		
-		@FXML
+		
 		public void switchToEntrance(ActionEvent event) throws IOException {
 			root = FXMLLoader.load(getClass().getResource("/application/view/HomeEntrance.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -34,7 +34,7 @@ public class SceneController {
 			stage.show();
 		}
 		
-		@FXML
+		
 		public void switchToKitchen(ActionEvent event) throws IOException {
 			root = FXMLLoader.load(getClass().getResource("/application/view/Kitchen.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();

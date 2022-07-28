@@ -7,6 +7,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import java.io.IOException;
 
+import application.model.GameData;
+
 
 public class Main extends Application {
 	@Override
