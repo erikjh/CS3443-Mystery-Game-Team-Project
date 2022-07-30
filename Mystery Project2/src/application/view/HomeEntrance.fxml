@@ -2,12 +2,19 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SceneController">
    <children>
-      <Label layoutX="278.0" layoutY="65.0" text="Home Entrance">
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Entrance%20resized.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="278.0" layoutY="65.0" text="Home Entrance" textFill="#3bdacf">
          <font>
             <Font size="36.0" />
          </font>
@@ -15,5 +22,6 @@
       <Button layoutX="333.0" layoutY="272.0" mnemonicParsing="false" onAction="#switchToKitchen" text="Switch to Kitchen" />
       <Button layoutX="321.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToBedroom1" text="Switch to Bedroom 1" />
       <Button layoutX="321.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchToBedroom2" text="Switch to Bedroom 2" />
+      <Button layoutX="321.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToBathroom" text="Switch to Bathroom" />
    </children>
 </AnchorPane>

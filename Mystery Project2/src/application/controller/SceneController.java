@@ -15,19 +15,19 @@ public class SceneController {
 		private Stage stage;
 		private Scene scene;
 		private Parent root;
+
 		
 		
-		public void switchToMenu(ActionEvent event) throws IOException {
-		    root = FXMLLoader.load(getClass().getResource("/application/view/MainMenu.fxml"));
+		public void switchToEntrance(ActionEvent event) throws IOException {
+			root = FXMLLoader.load(getClass().getResource("/application/view/HomeEntrance.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
 		}
 		
-		
-		public void switchToEntrance(ActionEvent event) throws IOException {
-			root = FXMLLoader.load(getClass().getResource("/application/view/HomeEntrance.fxml"));
+		public void switchToBathroom(ActionEvent event) throws IOException {
+		    root = FXMLLoader.load(getClass().getResource("/application/view/Bathroom.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 			scene = new Scene(root);
 			stage.setScene(scene);
