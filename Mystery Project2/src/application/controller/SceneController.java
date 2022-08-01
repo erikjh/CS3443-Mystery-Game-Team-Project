@@ -43,7 +43,7 @@ public class SceneController {
 	    		count ++;
 	    	}
 	    	if(i < gameData.getGameDialogue().size()) {
-	    		instructionsText.setText(gameData.getGameDialogue().get(i) + i + gameData.getGameDialogue().size());
+	    		instructionsText.setText(gameData.getGameDialogue().get(i));
 	    		i++;
 	    	}else{
 	    		 count = 0;
