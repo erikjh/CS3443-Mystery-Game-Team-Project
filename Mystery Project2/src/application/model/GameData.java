@@ -11,9 +11,7 @@ public class GameData {
 	private ArrayList<Character> gameCharacters = new ArrayList<Character>();
 	private String characterCSVFilePath;
 	private String gameDialogueFilePath;
-	private String gameSceneFilePath;
 	private ArrayList<String> gameDialogue = new ArrayList<String>();
-	private ArrayList<String> gameScene = new ArrayList<String>();
 	
 	public GameData() {
 		
@@ -42,13 +40,6 @@ public class GameData {
 	public void setGameDialogueFilePath(String gameDialogueCSVFilePath) {
 		this.gameDialogueFilePath = gameDialogueCSVFilePath;
 	}
-	public String getGameSceneFilePath() {
-		return gameSceneFilePath;
-	}
-
-	public void setGameSceneFilePath(String gameSceneFilePath) {
-		this.gameSceneFilePath = gameSceneFilePath;
-	}
 
 	public ArrayList<String> getGameDialogue() {
 		return gameDialogue;
@@ -56,14 +47,6 @@ public class GameData {
 
 	public void setGameDialogue(ArrayList<String> gameDialogue) {
 		this.gameDialogue = gameDialogue;
-	}
-
-	public ArrayList<String> getGameScene() {
-		return gameScene;
-	}
-
-	public void setGameScene(ArrayList<String> gameScene) {
-		this.gameScene = gameScene;
 	}
 
 	//Loads in characters to the gameCharacter ArrayList with a file given by the user
@@ -103,20 +86,12 @@ public class GameData {
 		}
 		br.close();
 	}
-	public void loadGameScene(String file) throws IOException{
-		this.gameSceneFilePath = file;
-		String line;
-		BufferedReader br = new BufferedReader(new FileReader(file));
-		while((line = br.readLine()) != null) {
-			gameScene.add(line);
-		}
-	}
 
 	@Override
 	public String toString() {
 		return "GameData [gameCharacters=" + gameCharacters + ", characterCSVFilePath=" + characterCSVFilePath
-				+ ", gameDialogueFilePath=" + gameDialogueFilePath + ", gameSceneFilePath=" + gameSceneFilePath
-				+ ", gameDialogue=" + gameDialogue + ", gameScene=" + gameScene + "]";
+				+ ", gameDialogueFilePath=" + gameDialogueFilePath + ", gameSceneFilePath="
+				+ ", gameDialogue=" + gameDialogue + ", gameScene=" ;
 	}
 
 	
