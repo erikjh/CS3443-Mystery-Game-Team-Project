@@ -5,20 +5,16 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SceneController">
    <children>
-      <ImageView fitHeight="800.0" fitWidth="800.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/Bedroom2%20resized.png" />
          </image>
       </ImageView>
-      <Label layoutX="335.0" layoutY="55.0" text="Bedroom 2" textFill="#31ddbb">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
       <ImageView fitHeight="460.0" fitWidth="468.0" layoutX="-90.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/Junie.png" />
@@ -29,6 +25,13 @@
             <Image url="@../../../Images/William.png" />
          </image>
       </ImageView>
-      <Button layoutX="320.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch To Entrance" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="301.0" layoutY="744.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
+      <Button layoutX="312.0" layoutY="755.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61571a" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c476b4" height="88.0" layoutX="241.0" layoutY="52.0" stroke="#61581b" strokeType="INSIDE" strokeWidth="10.0" width="299.0" />
+      <Label layoutX="266.0" layoutY="60.0" text="BEDROOM TWO" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="50.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

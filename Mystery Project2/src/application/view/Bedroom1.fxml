@@ -5,25 +5,28 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SceneController">
    <children>
-      <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="810.0" fitWidth="821.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/Bedroom1%20resized.png" />
          </image>
       </ImageView>
-      <Label layoutX="335.0" layoutY="55.0" text="Bedroom 1" textFill="#59c2b5">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Button layoutX="320.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch To Entrance" />
-      <ImageView fitHeight="495.0" fitWidth="494.0" layoutX="-81.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c476b4" height="88.0" layoutX="231.0" layoutY="42.0" stroke="#61581b" strokeType="INSIDE" strokeWidth="10.0" width="299.0" />
+      <ImageView fitHeight="495.0" fitWidth="494.0" layoutX="-94.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/Judy.png" />
          </image>
       </ImageView>
+      <Label layoutX="253.0" layoutY="50.0" prefHeight="53.0" prefWidth="287.0" text="BEDROOM ONE" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="50.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="306.0" layoutY="744.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
+      <Button layoutX="317.0" layoutY="755.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61581b" />
    </children>
 </AnchorPane>

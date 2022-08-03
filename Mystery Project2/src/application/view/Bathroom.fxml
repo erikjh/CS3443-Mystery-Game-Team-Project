@@ -5,6 +5,7 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SceneController">
@@ -14,11 +15,18 @@
             <Image url="@../../../Images/Bathroom%20resized.png" />
          </image>
       </ImageView>
-      <Label layoutX="309.0" layoutY="58.0" text="Bathroom" textFill="#28bdc3">
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c476b4" height="88.0" layoutX="260.0" layoutY="14.0" stroke="#61581b" strokeType="INSIDE" strokeWidth="10.0" width="234.0" />
+      <Label layoutX="283.0" layoutY="22.0" text="BATHROOM" textFill="WHITE">
          <font>
-            <Font size="36.0" />
+            <Font name="Chiller" size="50.0" />
          </font>
       </Label>
-      <Button layoutX="307.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch to Entrance" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="296.0" layoutY="734.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
+      <Button layoutX="307.0" layoutY="745.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textAlignment="CENTER" textFill="#61571a" />
+      <ImageView fitHeight="9.0" fitWidth="9.0" layoutX="623.0" layoutY="636.0">
+         <image>
+            <Image url="@../../../../../../Downloads/pngkey.com-fingerprint-png-174714.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
