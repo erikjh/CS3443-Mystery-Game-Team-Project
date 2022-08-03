@@ -20,5 +20,10 @@
          </font>
       </Label>
       <Button layoutX="320.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch To Entrance" />
+      <ImageView fitHeight="495.0" fitWidth="494.0" layoutX="-81.0" layoutY="386.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Judy.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

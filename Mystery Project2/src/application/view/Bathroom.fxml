@@ -19,6 +19,6 @@
             <Font size="36.0" />
          </font>
       </Label>
-      <Button layoutX="307.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch to Entrance Scene" />
+      <Button layoutX="307.0" layoutY="267.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch to Entrance" />
    </children>
 </AnchorPane>

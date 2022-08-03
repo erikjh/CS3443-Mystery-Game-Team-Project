@@ -19,6 +19,16 @@
             <Font size="36.0" />
          </font>
       </Label>
+      <ImageView fitHeight="460.0" fitWidth="468.0" layoutX="-90.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Junie.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="518.0" fitWidth="520.0" layoutX="29.0" layoutY="266.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/William.png" />
+         </image>
+      </ImageView>
       <Button layoutX="320.0" layoutY="264.0" mnemonicParsing="false" onAction="#switchToEntrance" text="Switch To Entrance" />
    </children>
 </AnchorPane>
