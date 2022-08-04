@@ -14,7 +14,7 @@
    <children>
       <ImageView fitHeight="800.0" fitWidth="812.0">
          <image>
-            <Image url="@../../../../../../Downloads/pexels-kris-lucas-3683853.jpg" />
+            <Image url="@../../../Images/pexels-kris-lucas-3683853.jpg" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c5747" height="70.0" layoutX="283.0" layoutY="468.0" stroke="#833521" strokeType="INSIDE" strokeWidth="5.0" width="188.0" />
@@ -30,7 +30,7 @@
          </font></Button>
       <ImageView fitHeight="119.0" fitWidth="501.0" layoutX="127.0" layoutY="258.0">
          <image>
-            <Image url="@../../../../../../Desktop/CS3443%20GAME/pngkey.com-dripping-blood-png-38950.png" />
+            <Image url="@../../../Images/pngkey.com-dripping-blood-png-38950.png" />
          </image>
       </ImageView>
       <Label layoutX="187.0" layoutY="143.0" text="Murder Mystery" textAlignment="CENTER" textFill="#7c1414">
@@ -40,12 +40,12 @@
       </Label>
       <ImageView fitHeight="156.0" fitWidth="221.0" layoutX="-38.0" layoutY="-12.0">
          <image>
-            <Image url="@../../../../../../Desktop/CS3443%20GAME/pngkey.com-bloody-handprint-png-161395.png" />
+            <Image url="@../../../Images/pngkey.com-bloody-handprint-png-161395.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="267.0" fitWidth="269.0" layoutX="247.0" layoutY="525.0">
          <image>
-            <Image url="@../../../../../../Downloads/pngkey.com-paper-png-122412.png" />
+            <Image url="@../../../Images/pngkey.com-paper-png-122412.png" />
          </image>
       </ImageView>
       <Text fill="#833521" layoutX="277.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0" text="help me find my killer..." wrappingWidth="199.99998807907104">

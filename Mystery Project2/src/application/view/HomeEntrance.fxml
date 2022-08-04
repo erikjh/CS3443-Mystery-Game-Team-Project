@@ -25,7 +25,7 @@
       <Button fx:id="bathroomButton" layoutX="47.0" layoutY="664.0" mnemonicParsing="false" onAction="#switchToBathroom" text="Bathroom" textFill="#61581a" />
       <ImageView fitHeight="95.0" fitWidth="126.0" layoutX="67.0" layoutY="449.0">
          <image>
-            <Image url="@../../../../../../Desktop/CS3443%20GAME/pngkey.com-blood-drop-png-254996.png" />
+            <Image url="@../../../Images/pngkey.com-blood-drop-png-254996.png" />
          </image>
       </ImageView>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="21.0" layoutY="529.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="120.0" />
@@ -36,12 +36,12 @@
       <Button fx:id="kitchenButton" layoutX="678.0" layoutY="374.0" mnemonicParsing="false" onAction="#switchToKitchen" text="Kitchen" textFill="#61581a" />
       <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="582.0" layoutY="610.0">
          <image>
-            <Image url="@../../../../../../Downloads/pngkey.com-handgun-png-1056679.png" />
+            <Image url="@../../../Images/pngkey.com-handgun-png-1056679.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="53.0" fitWidth="49.0" layoutX="397.0" layoutY="592.0">
          <image>
-            <Image url="@../../../../../../Downloads/pngkey.com-paper-png-122412.png" />
+            <Image url="@../../../Images/pngkey.com-paper-png-122412.png" />
          </image>
       </ImageView>
    </children>

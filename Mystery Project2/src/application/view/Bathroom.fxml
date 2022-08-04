@@ -25,7 +25,7 @@
       <Button layoutX="307.0" layoutY="745.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textAlignment="CENTER" textFill="#61571a" />
       <ImageView fitHeight="9.0" fitWidth="9.0" layoutX="623.0" layoutY="636.0">
          <image>
-            <Image url="@../../../../../../Downloads/pngkey.com-fingerprint-png-174714.png" />
+            <Image url="@../../../Images/pngkey.com-fingerprint-png-174714.png" />
          </image>
       </ImageView>
    </children>
