@@ -44,5 +44,5 @@
       <Button layoutX="251.0" layoutY="221.0" mnemonicParsing="false" opacity="0.0" prefHeight="130.0" prefWidth="151.0" text="cat bath art" textFill="TRANSPARENT" />
       <Button layoutX="734.0" layoutY="697.0" mnemonicParsing="false" opacity="0.0" prefHeight="96.0" prefWidth="65.0" text="book manuscript" textFill="TRANSPARENT" />
       <Button layoutX="600.0" layoutY="613.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="65.0" text="fingerprint" textFill="TRANSPARENT" />
-   </children>
+   </children> 
 </AnchorPane>

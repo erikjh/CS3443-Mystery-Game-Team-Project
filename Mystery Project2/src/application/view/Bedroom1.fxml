@@ -38,7 +38,7 @@
             <Image url="@../../../Images/580b57fbd9996e24bc43bb9c.png" />
          </image>
       </ImageView>
-      <Button layoutX="92.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="364.0" prefWidth="127.0" text="judy" textFill="TRANSPARENT" />
+      <Button layoutX="71.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="364.0" prefWidth="148.0" text="judy" textFill="TRANSPARENT" />
       <Button layoutX="650.0" layoutY="438.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="88.0" text="orange kitten" textFill="TRANSPARENT" />
       <Button layoutX="317.0" layoutY="233.0" mnemonicParsing="false" opacity="0.0" prefHeight="108.0" prefWidth="88.0" text="painting cat" textFill="TRANSPARENT" />
       <ImageView fitHeight="53.0" fitWidth="28.0" layoutX="620.0" layoutY="552.0">

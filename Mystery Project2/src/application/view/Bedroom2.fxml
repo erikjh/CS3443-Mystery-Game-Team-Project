@@ -53,10 +53,10 @@
       <Button layoutX="211.0" layoutY="274.0" mnemonicParsing="false" opacity="0.0" prefHeight="460.0" prefWidth="119.0" text="B2 William" textFill="TRANSPARENT" />
       <Button layoutX="428.0" layoutY="412.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="96.0" text="B2 Gray Kitten" textFill="TRANSPARENT" />
       <Button layoutX="759.0" layoutY="608.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="42.0" text="B2 Real Will" textFill="TRANSPARENT" />
-      <Button layoutX="93.0" layoutY="311.0" mnemonicParsing="false" opacity="0.0" prefHeight="360.0" prefWidth="107.0" text="junie" textFill="TRANSPARENT" />
-      <Button layoutX="760.0" layoutY="608.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="42.0" text="michelle will" textFill="TRANSPARENT" />
-      <Button layoutX="425.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="96.0" text="gray kitten" textFill="TRANSPARENT" />
-      <Button layoutX="345.0" layoutY="202.0" mnemonicParsing="false" opacity="0.0" prefHeight="102.0" prefWidth="235.0" text="cat meme" textFill="TRANSPARENT" />
-      <Button layoutX="238.0" layoutY="271.0" mnemonicParsing="false" opacity="0.0" prefHeight="415.0" prefWidth="96.0" text="william" textFill="TRANSPARENT" />
+      <Button layoutX="88.0" layoutY="300.0" mnemonicParsing="false" opacity="0.0" prefHeight="371.0" prefWidth="112.0" text="junie" textFill="TRANSPARENT" />
+      <Button layoutX="760.0" layoutY="608.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="42.0" text="michelle will" textFill="TRANSPARENT" />
+      <Button layoutX="425.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="104.0" text="gray kitten" textFill="TRANSPARENT" />
+      <Button layoutX="345.0" layoutY="202.0" mnemonicParsing="false" opacity="0.0" prefHeight="114.0" prefWidth="235.0" text="cat meme" textFill="TRANSPARENT" />
+      <Button layoutX="238.0" layoutY="263.0" mnemonicParsing="false" opacity="0.0" prefHeight="423.0" prefWidth="96.0" text="william" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>
