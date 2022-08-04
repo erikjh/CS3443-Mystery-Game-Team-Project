@@ -34,5 +34,15 @@
       </Label>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="306.0" layoutY="744.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
       <Button layoutX="317.0" layoutY="755.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61581b" />
+      <ImageView fitHeight="108.0" fitWidth="88.0" layoutX="317.0" layoutY="232.0">
+         <image>
+            <Image url="@../../../Images/boy-1319082.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="88.0" fitWidth="100.0" layoutX="655.0" layoutY="422.0">
+         <image>
+            <Image url="@../../../Images/580b57fbd9996e24bc43bb9c.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

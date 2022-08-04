@@ -34,5 +34,15 @@
             <Image url="@../../../Images/pngkey.com-fingerprint-png-174714.png" />
          </image>
       </ImageView>
+      <ImageView fitHeight="113.0" fitWidth="131.0" layoutX="269.0" layoutY="228.0">
+         <image>
+            <Image url="@../../../Images/580b57fbd9996e24bc43bb9f.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="96.0" fitWidth="83.0" layoutX="745.0" layoutY="697.0">
+         <image>
+            <Image url="@../../../Images/pngkey.com-books-png-239209.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
