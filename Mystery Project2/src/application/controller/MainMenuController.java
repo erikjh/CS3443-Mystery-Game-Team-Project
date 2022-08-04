@@ -1,32 +1,43 @@
 package application.controller;
 
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
+import java.nio.file.Paths;
+import java.util.ResourceBundle;
 
 import application.model.GameData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.media.AudioClip;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
 import javafx.stage.Stage; 
 
-public class MainMenuController extends AbstractSceneSwitchController{
+public class MainMenuController extends AbstractSceneSwitchController implements Initializable {
 		private GameData gameData = new GameData();
 		
 		@FXML
 	    private Button nextButton;
 	    @FXML
-	    
 	    private Text instructionText;
 	    @FXML
 	    private Button beginGameButton;
 	    private int count = 0;
 	    private int i = 0;
 	    
+	    // music variables
+	    private String musicFile;
+	    private Media media;
+	    private AudioClip menuMedia;
 		
 	    //Main Menu instruction loading method
 	    public void loadInstructions() throws IOException{
@@ -53,7 +64,34 @@ public class MainMenuController extends AbstractSceneSwitchController{
 	    //Method for switching to entrance from main menu
 	    public void switchToEntrance(ActionEvent event) throws IOException {
 			super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
+			stopMenuMusic(); // stops main menu music.
 		}
+	    
+	    // This method is called upon fxml load
+	    @Override 
+		public void initialize(URL arg0, ResourceBundle arg1) {
+	    	
+	    	musicFile = "Audio/mainMenu.mp3";
+		    media = new Media(Paths.get(musicFile).toUri().toString());
+		    menuMedia = new AudioClip(media.getSource()); // I used audioClip instead of MediaPlayer because there was an issue where after a few seconds the music would stop.
+		    menuMedia.setVolume(0.2); // volume can be set 0 - 1
+		    
+			playMenuMusic();
+				
+		}
+	    
+	    // This method plays the main menu background music.
+	    public void playMenuMusic() {
+	    	
+		    menuMedia.play();
+		    
+	    }
+	    
+	    // This method stops the main menu music, allowing the main game music to play.
+	    public void stopMenuMusic() {
+	    	
+	    	menuMedia.stop();
+	    }
 		
 		/*public void switchToBathroom(ActionEvent event) throws IOException {
 		    root = FXMLLoader.load(getClass().getResource("/application/view/Bathroom.fxml"));
