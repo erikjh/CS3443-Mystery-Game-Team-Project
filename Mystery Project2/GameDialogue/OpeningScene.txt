@@ -1,5 +1,5 @@
-You here to investigate a murder 
-that has taken place
+You're here to investigate  
+a murder that has taken place
 within this house!
 One of the members of the family 
 is the murderer!
@@ -9,5 +9,7 @@ Talk to each family member,
 explore every room, and 
 investigate every clue! 
 Your goal is to figure out 
-who the murder is!
-Good luck.
+who the murderer is!
+Be careful..
+in who you choose to condemn 
+Good luck...

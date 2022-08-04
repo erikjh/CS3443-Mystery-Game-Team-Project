@@ -23,7 +23,7 @@
          </font></Button>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c5747" height="93.0" layoutX="257.0" layoutY="347.0" stroke="#833521" strokeType="INSIDE" strokeWidth="5.0" width="250.0" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4c5747b2" height="103.0" layoutX="131.0" layoutY="163.0" stroke="#833521" strokeType="INSIDE" strokeWidth="10.0" width="501.0" />
-      <Button fx:id="beginGameButton" layoutX="278.0" layoutY="369.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BEGIN GAME" textFill="#4c5747">
+      <Button fx:id="beginGameButton" layoutX="279.0" layoutY="362.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BEGIN GAME" textFill="#4c5747">
          <font>
             <Font size="29.0" />
          </font></Button>
