@@ -11,6 +11,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
+import javafx.scene.text.Text;
 import javafx.stage.Stage; 
 
 public class SceneController {
@@ -24,7 +25,8 @@ public class SceneController {
 		@FXML
 	    private Button nextButton;
 	    @FXML
-	    private TextArea instructionsText;
+	    
+	    private Text instructionText;
 	    @FXML
 	    private Button beginGameButton;
 	    private int count = 0;
@@ -43,7 +45,7 @@ public class SceneController {
 	    		count ++;
 	    	}
 	    	if(i < gameData.getGameDialogue().size()) {
-	    		instructionsText.setText(gameData.getGameDialogue().get(i));
+	    		instructionText.setText(gameData.getGameDialogue().get(i));
 	    		i++;
 	    	}else{
 	    		 count = 0;
