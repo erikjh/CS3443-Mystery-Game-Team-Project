@@ -33,5 +33,10 @@
          </image>
       </ImageView>
       <Button layoutX="327.0" layoutY="746.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61581a" />
+      <ImageView fitHeight="46.0" fitWidth="60.0" layoutX="188.0" layoutY="369.0">
+         <image>
+            <Image url="@../../../Images/580b57fbd9996e24bc43bb8a.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

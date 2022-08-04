@@ -33,5 +33,20 @@
             <Font name="Chiller" size="50.0" />
          </font>
       </Label>
+      <ImageView fitHeight="72.0" fitWidth="96.0" layoutX="421.0" layoutY="408.0">
+         <image>
+            <Image url="@../../../Images/580b57fbd9996e24bc43bb96.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="96.0" layoutX="479.0" layoutY="230.0">
+         <image>
+            <Image url="@../../../Images/5ee772d099588c0004aa684b.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="24.0" fitWidth="42.0" layoutX="770.0" layoutY="611.0">
+         <image>
+            <Image url="@../../../Images/pngkey.com-old-paper-png-200841.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
