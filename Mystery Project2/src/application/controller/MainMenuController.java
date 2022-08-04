@@ -14,13 +14,8 @@ import javafx.scene.control.TextArea;
 import javafx.scene.text.Text;
 import javafx.stage.Stage; 
 
-public class SceneController {
+public class MainMenuController extends AbstractSceneSwitchController{
 		private GameData gameData = new GameData();
-
-		private Stage stage;
-		private Scene scene;
-		private Parent root;
-		//Main Menu Variables
 		
 		@FXML
 	    private Button nextButton;
@@ -32,13 +27,13 @@ public class SceneController {
 	    private int count = 0;
 	    private int i = 0;
 	    
-	    //End of Main Menu Variables
 		
 	    //Main Menu instruction loading method
 	    public void loadInstructions() throws IOException{
 	    	gameData.loadGameDialogue("GameDialogue/OpeningScene.txt");
 	    }
 	    
+	    //Loading in instructions for the game
 	    public void loadNextInstructions(ActionEvent event) throws IOException{
 	    	 if( count == 0) {
 	    		loadInstructions();
@@ -54,22 +49,19 @@ public class SceneController {
 	    		 switchToEntrance(event); //if running instructions forever comment out or delete line
 	    	}
 	    }
-	    	
-		
-		public void switchToEntrance(ActionEvent event) throws IOException {
-			root = FXMLLoader.load(getClass().getResource("/application/view/HomeEntrance.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
+	    
+	    //Method for switching to entrance from main menu
+	    public void switchToEntrance(ActionEvent event) throws IOException {
+			super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
 		}
 		
-		public void switchToBathroom(ActionEvent event) throws IOException {
+		/*public void switchToBathroom(ActionEvent event) throws IOException {
 		    root = FXMLLoader.load(getClass().getResource("/application/view/Bathroom.fxml"));
 			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
+			
 		}
 		
 		
@@ -95,6 +87,6 @@ public class SceneController {
 			scene = new Scene(root);
 			stage.setScene(scene);
 			stage.show();
-		}
+		}*/
 		
 }
