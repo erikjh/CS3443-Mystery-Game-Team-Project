@@ -14,6 +14,7 @@ import javafx.scene.media.MediaPlayer;
 
 public class HomeEntranceController extends AbstractSceneSwitchController implements Initializable {
 	
+	// music variables
 	private String musicFile;
 	private Media media;
 	private AudioClip startGameMedia;
@@ -35,7 +36,7 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		musicFile = "Audio/startGame.mp4";
+		musicFile = "Audio/startGame(3mins).mp3";
 	    media = new Media(Paths.get(musicFile).toUri().toString());
 	    startGameMedia = new AudioClip(media.getSource());
 	    startGameMedia.setCycleCount(999); // cycle the media 999 times
