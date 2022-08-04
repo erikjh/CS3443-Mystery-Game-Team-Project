@@ -51,5 +51,9 @@
          </image>
       </ImageView>
       <Circle fill="#1f93ff00" layoutX="523.0" layoutY="571.0" radius="59.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Button layoutX="77.0" layoutY="455.0" mnemonicParsing="false" opacity="0.0" prefHeight="68.0" prefWidth="118.0" text="blood splatter" textFill="TRANSPARENT" />
+      <Button layoutX="389.0" layoutY="586.0" mnemonicParsing="false" opacity="0.0" prefHeight="60.0" prefWidth="65.0" text="suicide note" textFill="TRANSPARENT" />
+      <Button layoutX="574.0" layoutY="615.0" mnemonicParsing="false" opacity="0.0" text="gun" textFill="TRANSPARENT" />
+      <Button layoutX="480.0" layoutY="511.0" mnemonicParsing="false" opacity="0.0" prefHeight="81.0" prefWidth="104.0" text="michelle" textFill="TRANSPARENT" />
    </children>
 </AnchorPane>
