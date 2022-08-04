@@ -1,3 +1,5 @@
 You here to investigate a murder within the house!
-One of the members of the family is the murderer it is your job to figure out who it is!
-Talk to each family member and go to each room and investigate clue to figure out who did it!
+One of the members of the family is the murderer!
+And it is your job to figure out who it is!
+Talk to each family member and go to each room and investigate every clue! 
+Your goal is to figure out who did it!
