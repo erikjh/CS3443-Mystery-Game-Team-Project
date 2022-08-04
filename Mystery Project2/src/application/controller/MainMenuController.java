@@ -75,7 +75,7 @@ public class MainMenuController extends AbstractSceneSwitchController implements
 		    media = new Media(Paths.get(musicFile).toUri().toString());
 		    menuMedia = new AudioClip(media.getSource()); // I used audioClip instead of MediaPlayer because there was an issue where after a few seconds the music would stop.
 		    menuMedia.setCycleCount(999); // cycle the media 999 times
-		    menuMedia.setVolume(0.5); // volume can be set 0 - 1
+		    menuMedia.setVolume(0.2); // volume can be set 0 - 1
 		    
 			playMenuMusic();
 				
