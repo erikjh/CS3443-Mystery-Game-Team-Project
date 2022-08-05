@@ -25,15 +25,40 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	
 	public void switchToKitchen(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Kitchen.fxml");
+		
+		// open door sound effect
+		musicFile = "Audio/footsteps.mp3";
+		media = new Media(Paths.get(musicFile).toUri().toString());
+		AudioClip footstepsKitchen = new AudioClip(media.getSource());
+		footstepsKitchen.play();
 	}
 	public void switchToBathroom(ActionEvent event) throws IOException{
 		super.sceneSwitcher(event, "/application/view/Bathroom.fxml");
+		
+		// open door sound effect
+		musicFile = "Audio/dooropen.mp3";
+		media = new Media(Paths.get(musicFile).toUri().toString());
+		AudioClip doorOpen = new AudioClip(media.getSource());
+		doorOpen.play();
+		
 	}
 	public void switchToBedroom1(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Bedroom1.fxml");
+		
+		// open door sound effect
+		musicFile = "Audio/dooropen.mp3";
+		media = new Media(Paths.get(musicFile).toUri().toString());
+		AudioClip doorOpen = new AudioClip(media.getSource());
+		doorOpen.play();
 	}
 	public void switchToBedroom2(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Bedroom2.fxml");
+		
+		// open door sound effect
+		musicFile = "Audio/dooropen.mp3";
+		media = new Media(Paths.get(musicFile).toUri().toString());
+		AudioClip doorOpen = new AudioClip(media.getSource());
+		doorOpen.play();
 	}
 	
 	// This method is called upon fxml load
