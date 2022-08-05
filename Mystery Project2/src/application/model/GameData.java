@@ -8,13 +8,20 @@ import java.util.Random;
 import java.util.HashSet;
 
 public class GameData {
+	private static final GameData instance  = new GameData();
+	
 	private ArrayList<Character> gameCharacters = new ArrayList<Character>();
 	private String characterCSVFilePath;
 	private String gameDialogueFilePath;
 	private ArrayList<String> gameDialogue = new ArrayList<String>();
+	private boolean audioStarted = false;
 	
 	public GameData() {
 		
+	}
+	
+	public static GameData getInstance() {
+		return instance;
 	}
 	
 	public ArrayList<Character> getGameCharacters() {
@@ -47,6 +54,14 @@ public class GameData {
 
 	public void setGameDialogue(ArrayList<String> gameDialogue) {
 		this.gameDialogue = gameDialogue;
+	}
+	
+	public boolean getAudioStarted() {
+		return audioStarted;
+	}
+	
+	public void setAudioStarted(boolean audioStarted) {
+		this.audioStarted = audioStarted;
 	}
 
 	//Loads in characters to the gameCharacter ArrayList with a file given by the user

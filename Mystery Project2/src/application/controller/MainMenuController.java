@@ -23,7 +23,7 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage; 
 
 public class MainMenuController extends AbstractSceneSwitchController implements Initializable {
-		private GameData gameData = new GameData();
+		private GameData gameData = GameData.getInstance();
 		
 		@FXML
 	    private Button nextButton;
@@ -63,8 +63,9 @@ public class MainMenuController extends AbstractSceneSwitchController implements
 	    
 	    //Method for switching to entrance from main menu
 	    public void switchToEntrance(ActionEvent event) throws IOException {
+	    	stopMenuMusic();// stops main menu music.
 			super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
-			stopMenuMusic(); // stops main menu music.
+			 
 		}
 	    
 	    // This method is called upon fxml load

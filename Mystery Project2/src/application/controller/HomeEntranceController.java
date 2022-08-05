@@ -1,5 +1,6 @@
 package application.controller;
 
+import application.model.GameData;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -19,6 +20,9 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	private Media media;
 	private AudioClip startGameMedia;
 	
+	private GameData gameData = GameData.getInstance();
+
+	
 	public void switchToKitchen(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Kitchen.fxml");
 	}
@@ -36,19 +40,24 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		musicFile = "Audio/startGame(3mins).mp3";
-	    media = new Media(Paths.get(musicFile).toUri().toString());
-	    startGameMedia = new AudioClip(media.getSource());
-	    startGameMedia.setCycleCount(999); // cycle the media 999 times
-	    startGameMedia.setVolume(0.2);  // volume can be set 0 - 1
 		
-		playEntranceMusic();
+			
+			musicFile = "Audio/startGame(3mins).mp3";
+		    media = new Media(Paths.get(musicFile).toUri().toString());
+		    startGameMedia = new AudioClip(media.getSource());
+		    startGameMedia.setCycleCount(999); // cycle the media 999 times
+		    startGameMedia.setVolume(0.2);  // volume can be set 0 - 1
+			
+			playEntranceMusic();
+	
 		
 	}
 	
 	// This method plays the main menu background music.
 	public void playEntranceMusic() {
-    	
-	    startGameMedia.play();
+		if(gameData.getAudioStarted() == false) {
+			gameData.setAudioStarted(true);
+	    	startGameMedia.play();
+		}
     }
 }
