@@ -10,7 +10,8 @@ import javafx.scene.media.Media;
 
 public class BathroomController extends AbstractSceneSwitchController {
 	
-	GameData gameData = GameData.getInstance();
+	//Get instance of GameData to share between scenes
+	private GameData gameData = GameData.getInstance();
 	
 	public void switchToEntrance(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");

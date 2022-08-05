@@ -20,6 +20,7 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	private Media media;
 	private AudioClip startGameMedia;
 	
+	//Get instance of GameData to share between scenes
 	private GameData gameData = GameData.getInstance();
 
 	

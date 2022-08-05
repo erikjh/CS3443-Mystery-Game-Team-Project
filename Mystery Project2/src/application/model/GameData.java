@@ -8,6 +8,8 @@ import java.util.Random;
 import java.util.HashSet;
 
 public class GameData {
+	
+	//creates and sets instance of GameData to share between scenes
 	private static final GameData instance  = new GameData();
 	
 	private ArrayList<Character> gameCharacters = new ArrayList<Character>();
@@ -19,6 +21,7 @@ public class GameData {
 	public GameData() {
 		
 	}
+	
 	
 	public static GameData getInstance() {
 		return instance;

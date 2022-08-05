@@ -9,6 +9,8 @@ import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 
 public class KitchenController extends AbstractSceneSwitchController {
+	
+	//Get instance of GameData to share between scenes
 	private GameData gameData = GameData.getInstance();
 	
 	public void switchToEntrance(ActionEvent event) throws IOException {
