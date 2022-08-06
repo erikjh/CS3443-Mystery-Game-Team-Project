@@ -15,12 +15,7 @@ public class Bedroom1Controller extends AbstractSceneSwitchController {
 	
 	public void switchToEntrance(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
-		
-		// open door sound effect
-		String musicFile = "Audio/dooropen.mp3";
-		Media media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip doorOpen = new AudioClip(media.getSource());
-		doorOpen.play();
+		super.sceneSound("door");
 	}
 	
 

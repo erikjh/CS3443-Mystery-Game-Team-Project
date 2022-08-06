@@ -15,12 +15,7 @@ public class KitchenController extends AbstractSceneSwitchController {
 	
 	public void switchToEntrance(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
-		
-		// footsteps to kitchen sound effect
-		String musicFile = "Audio/footsteps.mp3";
-		Media media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip footstepsKitchen = new AudioClip(media.getSource());
-		footstepsKitchen.play();
+		super.sceneSound("footsteps");
 	}
 
 }

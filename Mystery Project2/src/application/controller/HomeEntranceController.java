@@ -26,54 +26,30 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	
 	public void switchToKitchen(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Kitchen.fxml");
-		
-		// open door sound effect
-		musicFile = "Audio/footsteps.mp3";
-		media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip footstepsKitchen = new AudioClip(media.getSource());
-		footstepsKitchen.play();
+		super.sceneSound("footsteps");
 	}
 	public void switchToBathroom(ActionEvent event) throws IOException{
 		super.sceneSwitcher(event, "/application/view/Bathroom.fxml");
-		
-		// open door sound effect
-		musicFile = "Audio/dooropen.mp3";
-		media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip doorOpen = new AudioClip(media.getSource());
-		doorOpen.play();
-		
+		super.sceneSound("door");
 	}
 	public void switchToBedroom1(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Bedroom1.fxml");
-		
-		// open door sound effect
-		musicFile = "Audio/dooropen.mp3";
-		media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip doorOpen = new AudioClip(media.getSource());
-		doorOpen.play();
+		super.sceneSound("door");
 	}
 	public void switchToBedroom2(ActionEvent event) throws IOException {
 		super.sceneSwitcher(event, "/application/view/Bedroom2.fxml");
-		
-		// open door sound effect
-		musicFile = "Audio/dooropen.mp3";
-		media = new Media(Paths.get(musicFile).toUri().toString());
-		AudioClip doorOpen = new AudioClip(media.getSource());
-		doorOpen.play();
+		super.sceneSound("door");
 	}
 	
 	// This method is called upon fxml load
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 		// TODO Auto-generated method stub
-		
-			
 			musicFile = "Audio/startGame(3mins).mp3";
 		    media = new Media(Paths.get(musicFile).toUri().toString());
 		    startGameMedia = new AudioClip(media.getSource());
 		    startGameMedia.setCycleCount(999); // cycle the media 999 times
 		    startGameMedia.setVolume(0.2);  // volume can be set 0 - 1
-			
 			playEntranceMusic();
 	
 		

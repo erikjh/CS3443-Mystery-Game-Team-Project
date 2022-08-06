@@ -1,0 +1,3 @@
+M ,The manuscript clue goes here
+F ,the finger print clue goes here
+P ,the picture clue goes here

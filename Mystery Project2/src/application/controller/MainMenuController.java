@@ -65,68 +65,30 @@ public class MainMenuController extends AbstractSceneSwitchController implements
 	    public void switchToEntrance(ActionEvent event) throws IOException {
 	    	stopMenuMusic();// stops main menu music.
 			super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
+			super.sceneSound("door");
 			 
 		}
 	    
 	    // This method is called upon fxml load
 	    @Override 
 		public void initialize(URL arg0, ResourceBundle arg1) {
-	    	
 	    	musicFile = "Audio/mainMenu(3mins).mp3";
 		    media = new Media(Paths.get(musicFile).toUri().toString());
 		    menuMedia = new AudioClip(media.getSource()); // I used audioClip instead of MediaPlayer because there was an issue where after a few seconds the music would stop.
 		    menuMedia.setCycleCount(999); // cycle the media 999 times
 		    menuMedia.setVolume(0.2); // volume can be set 0 - 1
-		    
 			playMenuMusic();
 				
 		}
 	    
 	    // This method plays the main menu background music.
 	    public void playMenuMusic() {
-	    	
 		    menuMedia.play();
-		    
 	    }
 	    
 	    // This method stops the main menu music, allowing the main game music to play.
 	    public void stopMenuMusic() {
-	    	
 	    	menuMedia.stop();
 	    }
-		
-		/*public void switchToBathroom(ActionEvent event) throws IOException {
-		    root = FXMLLoader.load(getClass().getResource("/application/view/Bathroom.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-			
-		}
-		
-		
-		public void switchToKitchen(ActionEvent event) throws IOException {
-			root = FXMLLoader.load(getClass().getResource("/application/view/Kitchen.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-		}
-		
-		public void switchToBedroom1(ActionEvent event) throws IOException {
-			root = FXMLLoader.load(getClass().getResource("/application/view/Bedroom1.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-		}
-		
-		public void switchToBedroom2(ActionEvent event) throws IOException {
-			root = FXMLLoader.load(getClass().getResource("/application/view/Bedroom2.fxml"));
-			stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-			scene = new Scene(root);
-			stage.setScene(scene);
-			stage.show();
-		}*/
 		
 }
