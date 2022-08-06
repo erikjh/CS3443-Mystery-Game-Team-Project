@@ -22,6 +22,8 @@ public class BathroomController extends AbstractSceneSwitchController {
 
 	    @FXML
 	    private Button fingerPrintButton;
+	    
+	    private String clueFile = "GameDialogue/BathroomClues.txt";
 
 	
 	//Get instance of GameData to share between scenes
@@ -31,7 +33,7 @@ public class BathroomController extends AbstractSceneSwitchController {
 		super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
 		super.sceneSound("door");
 	}
-	public void clueClick(ActionEvent event) throws IOException {
+	/*public void clueClick(ActionEvent event) throws IOException {
 		gameData.loadGameDialogue("GameDialogue/BathroomClues.txt");
 		
 		if(event.getSource() == manuscriptButton) {
@@ -56,5 +58,10 @@ public class BathroomController extends AbstractSceneSwitchController {
 				}
 			}
 		}
+	}*/
+	public void clueClick(ActionEvent event) throws IOException{
+		super.clueClick(clueFile, event, "M", manuscriptButton, gameData, clueTextDisplay);
+		super.clueClick(clueFile, event, "P", pictureButton, gameData, clueTextDisplay);
+		super.clueClick(clueFile, event, "F", fingerPrintButton, gameData, clueTextDisplay);
 	}
 }

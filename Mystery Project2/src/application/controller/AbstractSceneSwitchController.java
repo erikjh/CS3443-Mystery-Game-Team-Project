@@ -9,8 +9,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 
@@ -42,6 +44,17 @@ public abstract class AbstractSceneSwitchController {
 			AudioClip doorOpen = new AudioClip(media.getSource());
 			doorOpen.play();
 			
+		}
+	}
+	public void clueClick(String file, ActionEvent event, String inputString, Button click, GameData gameData, Text text) throws IOException {
+		gameData.loadGameDialogue(file);
+		if(event.getSource() == click) {
+			for(String index : gameData.getGameDialogue()) {
+				if (index.startsWith(inputString, 0)) {
+					String[] tempString = index.split(",");
+					text.setText(tempString[1]);
+				}
+			}
 		}
 	}
 }

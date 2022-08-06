@@ -1,0 +1,3 @@
+B ,black cat clue goes here
+F ,freezer clue goes here
+W ,warm stove clue goes here

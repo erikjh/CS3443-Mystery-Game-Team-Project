@@ -1,0 +1,3 @@
+P ,painting clue goes here
+F ,Fake Will clue goes here
+O ,Orange cat clue goes here

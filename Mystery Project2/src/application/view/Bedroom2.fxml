@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -8,7 +14,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Bedroom2Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Bedroom2Controller">
    <children>
       <ImageView fitHeight="800.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -48,15 +54,11 @@
             <Image url="@../../../Images/pngkey.com-old-paper-png-200841.png" />
          </image>
       </ImageView>
-      <Button layoutX="340.0" layoutY="200.0" mnemonicParsing="false" opacity="0.0" prefHeight="114.0" prefWidth="251.0" text="B2 Cat Meme" textFill="TRANSPARENT" />
-      <Button layoutX="99.0" layoutY="311.0" mnemonicParsing="false" opacity="0.0" prefHeight="415.0" prefWidth="96.0" text="B2 Junie" textFill="TRANSPARENT" />
-      <Button layoutX="211.0" layoutY="274.0" mnemonicParsing="false" opacity="0.0" prefHeight="460.0" prefWidth="119.0" text="B2 William" textFill="TRANSPARENT" />
-      <Button layoutX="428.0" layoutY="412.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="96.0" text="B2 Gray Kitten" textFill="TRANSPARENT" />
-      <Button layoutX="759.0" layoutY="608.0" mnemonicParsing="false" opacity="0.0" prefHeight="31.0" prefWidth="42.0" text="B2 Real Will" textFill="TRANSPARENT" />
-      <Button layoutX="88.0" layoutY="300.0" mnemonicParsing="false" opacity="0.0" prefHeight="371.0" prefWidth="112.0" text="junie" textFill="TRANSPARENT" />
-      <Button layoutX="760.0" layoutY="608.0" mnemonicParsing="false" opacity="0.0" prefHeight="39.0" prefWidth="42.0" text="michelle will" textFill="TRANSPARENT" />
-      <Button layoutX="425.0" layoutY="409.0" mnemonicParsing="false" opacity="0.0" prefHeight="72.0" prefWidth="104.0" text="gray kitten" textFill="TRANSPARENT" />
-      <Button layoutX="345.0" layoutY="202.0" mnemonicParsing="false" opacity="0.0" prefHeight="114.0" prefWidth="235.0" text="cat meme" textFill="TRANSPARENT" />
-      <Button layoutX="238.0" layoutY="263.0" mnemonicParsing="false" opacity="0.0" prefHeight="423.0" prefWidth="96.0" text="william" textFill="TRANSPARENT" />
+      <Button fx:id="catMemeButton" layoutX="340.0" layoutY="200.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="114.0" prefWidth="251.0" text="B2 Cat Meme" textFill="TRANSPARENT" />
+      <Button fx:id="junieButton" layoutX="99.0" layoutY="311.0" mnemonicParsing="false" opacity="0.0" prefHeight="415.0" prefWidth="96.0" text="B2 Junie" textFill="TRANSPARENT" />
+      <Button fx:id="williamButton" layoutX="211.0" layoutY="274.0" mnemonicParsing="false" opacity="0.0" prefHeight="460.0" prefWidth="119.0" text="B2 William" textFill="TRANSPARENT" />
+      <Button fx:id="grayCatButton" layoutX="428.0" layoutY="412.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="72.0" prefWidth="96.0" text="B2 Gray Kitten" textFill="TRANSPARENT" />
+      <Button fx:id="realWillButton" layoutX="759.0" layoutY="608.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="31.0" prefWidth="42.0" text="B2 Real Will" textFill="TRANSPARENT" />
+      <Text fx:id="clueTextDisplay" layoutX="104.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="572.13671875" />
    </children>
 </AnchorPane>
