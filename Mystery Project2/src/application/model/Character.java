@@ -2,14 +2,14 @@ package application.model;
 
 public class Character {
 	private String name;
-	private int age;
-	private String relation;
+	//private int age;
+	//private String relation;
 	private boolean guilty;
 	
 	public Character(String name, int age, String relation, boolean guilty) {
 		this.name = name;
-		this.age = age;
-		this.relation = relation;
+		//this.age = age;
+		//this.relation = relation;
 		this.guilty = guilty;
 	}
 	public Character() {
@@ -24,6 +24,7 @@ public class Character {
 		this.name = name;
 	}
 
+/*	
 	public int getAge() {
 		return age;
 	}
@@ -39,7 +40,7 @@ public class Character {
 	public void setRelation(String relation) {
 		this.relation = relation;
 	}
-
+*/
 	public boolean isGuilty() {
 		return guilty;
 	}
@@ -47,10 +48,11 @@ public class Character {
 	public void setGuilty(boolean guilty) {
 		this.guilty = guilty;
 	}
+/*	
 	@Override
 	public String toString() {
 		return getRelation();
 	}
-	
+*/	
 
 }
