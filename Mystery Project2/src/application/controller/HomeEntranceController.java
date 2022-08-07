@@ -57,6 +57,15 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 		super.sceneSwitcher(event, "/application/view/Bedroom2.fxml");
 		super.sceneSound("door");
 	}
+	public void switchToDecision(ActionEvent event) throws IOException {
+		super.sceneSwitcher(event, "/application/view/Decision.fxml");
+	}
+    public void switchToMainMenu(ActionEvent event) throws IOException {
+    	startGameMedia.stop();// stops main menu music.
+    	gameData.setAudioStarted(false);
+		super.sceneSwitcher(event, "/application/view/MainMenu1.fxml");
+    }	 
+	
 	
 	
 	

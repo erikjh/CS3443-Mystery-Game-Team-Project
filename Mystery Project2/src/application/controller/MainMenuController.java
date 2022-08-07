@@ -69,6 +69,8 @@ public class MainMenuController extends AbstractSceneSwitchController implements
 			 
 		}
 	    
+	    
+	    
 	    // This method is called upon fxml load
 	    @Override 
 		public void initialize(URL arg0, ResourceBundle arg1) {
