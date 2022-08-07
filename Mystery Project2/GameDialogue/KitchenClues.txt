@@ -3,11 +3,11 @@ F ;In the freezer there is a bottle of wine that's not really cold...it was put 
 W ;Hmm, looks like the stove is still warm....
 S1 ;Samson: *looks over at Jason* "Well I was here in the kitchen getting a snack"
 S2 ;Samson: "That cat is never that nice, lucky you."
-S3 ;Samson: “There’s no way my cuz would’ve killed herself!!! She loved writing! She was so excited about her next book release!! Give me that pen!”
-S4 ;Samson’s Note: I CAN’T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT’S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING….
-S5 ;I WANTED TO BE A NY BESTSELLING AUTHOR…now…well it’s not like I ever would have made it…farewell cruel world…
+S3 ;Samson: “There’s no way my cuz would've killed herself!!! She loved writing! She was so excited about her next book release!! Give me that pen!"
+S4 ;Samson's Note: I CAN'T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT'S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING...
+S5 ;I WANTED TO BE A NY BESTSELLING AUTHOR...now...well it's not like I ever would have made it...farewell cruel world.."
 J1 ;Jason: *glares at Samson* "We were both here in the kitchen around that time, I came in while he *glares at Samson* was poking his nose around here"
 J2 ;Jason: "Oh Little Void is such a sweetie pie! She named this one Little Void since it always disappears in the shadows. Have you met the gray little poof yet? Sweeter than sugar!"
-J3 ;Jason: “I know I look rough around the edges, but I would never hurt my god-daughter, hand me your pen”
-J4 ;Jason’s Note: I CAN’T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT’S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING….
-J5 ;I WANTED TO BE A NY BESTSELLING AUTHOR…now…well it’s not like I ever would have made it…farewell cruel world…
+J3 ;Jason: "I know I look rough around the edges, but I would never hurt my god-daughter, hand me your pen"
+J4 ;Jason's Note: I CAN'T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT'S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING...
+J5 ;I WANTED TO BE A NY BESTSELLING AUTHOR...now...well it's not like I ever would have made it...farewell cruel world..."

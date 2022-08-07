@@ -2,14 +2,14 @@ G ;...this cat seemed frightened by something...or someone...
 M ;...This would've been a great photo...if it wasn't for the Crying Cat Meme...
 W ;..she had a will this young...she was gonna give everything to her cats...then...donate everything and turn her home and land into a cat haven.
 B1 ;William: "That's a bit of a personal question...well we were in here...I'd rather not go into detail if you're catching what I'm throwing."
-B2 ;William: (1 / 2) “So she killed herself…poor kid, I used to read my niece stories when she was young…"
-B3 ;William: "I like to think I inspired her to be an author…to think the stress of it all is what killed her..”
-B4 ;William: “Of course I can write this note for ya…it pains me to write these words, but I’ll do it for her…”
-B5 ;William's Note: I CAN’T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT’S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITINg….
-B6 ;I WANTED TO BE A NY BESTSELLING AUTHOR…now…well it’s not like I ever would have made it…farewell cruel world…
+B2 ;William: (1 / 2) “So she killed herself...poor kid, I used to read my niece stories when she was young..."
+B3 ;William: "I like to think I inspired her to be an author...to think the stress of it all is what killed her.."
+B4 ;William: (2 / 2) "Of course I can write this note for ya...it pains me to write these words, but I'll do it for her..."
+B5 ;William's Note: I CAN'T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT'S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING...
+B6 ;I WANTED TO BE A NY BESTSELLING AUTHOR...now...well it's not like I ever would have made it...farewell cruel world...
 J1 ;Junie: "I was here with my husband, that's all you need to know."
 J2 ;Junie: "Aww this poor baby! This one has always been a scaredy-cat."
-J3 ;Junie: “Sure I’ll write you a note my husband cherished his niece. "
-J4 ;Junie: "It’s a shame the house isn’t going to him, he inspired her to become an author. Have you seen her godfather? He’s not all there.”
-J5 ;Junie's Note: I CAN’T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT’S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING….
-J6 ;I WANTED TO BE A NY BESTSELLING AUTHOR…now…well it’s not like I ever would have made it…fairwell cruel world…
+J3 ;Junie: "Sure I'll write you a note my husband cherished his niece. "
+J4 ;Junie: "It's a shame the house isn't going to him, he inspired her to become an author. Have you seen her godfather? He's not all there."
+J5 ;Junie's Note: I CAN'T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE, IT'S TOO MUCH STRESS TO BEAR! THE NOVELS I DREAMED OF WRITING...
+J6 ;I WANTED TO BE A NY BESTSELLING AUTHOR...well it's not like I ever would have made it...fairwell cruel world."
