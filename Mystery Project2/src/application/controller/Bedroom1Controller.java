@@ -31,6 +31,7 @@ public class Bedroom1Controller extends AbstractSceneSwitchController {
 	    private String clueFile = "GameDialogue/Bedroom1Clues.txt";
 	    private int dialogueNum = 1;
 	    private boolean catClue = false;
+	    
 	
 	//Get instance of GameData to share between scenes
 	private GameData gameData = GameData.getInstance();
@@ -45,8 +46,41 @@ public class Bedroom1Controller extends AbstractSceneSwitchController {
 	}
 	
 	public void judyClick(ActionEvent event) throws IOException{
-		  
-		 if(catClue == true) {
+		
+		boolean majorCluesFound = false;
+		
+		if(gameData.getCluesFound() == 3)
+			majorCluesFound = true;
+		
+		//Will only occur after all major clues found and will cycle only once
+		if(majorCluesFound == true && gameData.judyNoteDialogue == false) {
+			switch(dialogueNum) {
+				case 1: super.clueClick(clueFile, event, "J4", judyButton, gameData, clueTextDisplay);
+						dialogueNum++;
+						break;
+						
+				case 2: super.clueClick(clueFile, event, "J5", judyButton, gameData, clueTextDisplay);
+						dialogueNum++;
+						break;
+						
+				case 3: super.clueClick(clueFile, event, "J6", judyButton, gameData, clueTextDisplay);
+						dialogueNum++;
+						break;
+						
+				case 4:	super.clueClick(clueFile, event, "J7", judyButton, gameData, clueTextDisplay);
+						dialogueNum++;
+						break;
+						
+				case 5:	super.clueClick(clueFile, event, "J8", judyButton, gameData, clueTextDisplay);
+						dialogueNum = 1;
+						gameData.judyNoteDialogue = true;
+						break;
+				
+				default: dialogueNum = 1;
+						 break;
+			}
+		} 
+		else if(catClue == true) {
 			 super.clueClick(clueFile, event, "J3", judyButton, gameData, clueTextDisplay);
 			 catClue = false;
 		 }

@@ -29,6 +29,11 @@ public class GameData {
     public int bloodClueFound = 0;
     public int noteClueFound = 0;
     public int gunClueFound = 0;
+    public boolean judyNoteDialogue = false;
+    public boolean junieNoteDialogue = false;
+    public boolean williamNoteDialogue = false;
+    public boolean samsonNoteDialogue = false;
+    public boolean jasonNoteDialogue = false;
 	
 	
 	public GameData() {

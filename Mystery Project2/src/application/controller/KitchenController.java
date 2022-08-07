@@ -31,6 +31,8 @@ public class KitchenController extends AbstractSceneSwitchController {
     private Button warmStoveButton;
     
     private String clueFile = "GameDialogue/KitchenClues.txt";
+    private int samDialogueNum = 1;
+    private int jasonDialogueNum = 1;
     private boolean catClue = false;
 
 	
@@ -47,8 +49,33 @@ public class KitchenController extends AbstractSceneSwitchController {
 	}
 
 	public void samsonClick(ActionEvent event) throws IOException{
-		  
-		 if(catClue == true) {
+		
+		boolean majorCluesFound = false;
+		
+		if(gameData.getCluesFound() == 3)
+			majorCluesFound = true;
+		
+		//Will only occur after all major clues found and will cycle only once
+		if(majorCluesFound == true && gameData.samsonNoteDialogue == false) {
+			switch(samDialogueNum) {
+				case 1: super.clueClick(clueFile, event, "S3", samsonButton, gameData, clueTextDisplay);
+						samDialogueNum++;
+						break;
+						
+				case 2: super.clueClick(clueFile, event, "S4", samsonButton, gameData, clueTextDisplay);
+						samDialogueNum++;
+						break;
+						
+				case 3:	super.clueClick(clueFile, event, "S5", samsonButton, gameData, clueTextDisplay);
+						samDialogueNum = 1;
+						gameData.samsonNoteDialogue = true;
+						break;
+				
+				default: samDialogueNum = 1;
+						 break;
+			}
+		} 		  
+		else if(catClue == true) {
 			 super.clueClick(clueFile, event, "S2", samsonButton, gameData, clueTextDisplay);
 			 catClue = false;
 		 }
@@ -58,8 +85,32 @@ public class KitchenController extends AbstractSceneSwitchController {
 	}
 	
 	public void jasonClick(ActionEvent event) throws IOException{
-		  
-		 if(catClue == true) {
+		boolean majorCluesFound = false;
+		
+		if(gameData.getCluesFound() == 3)
+			majorCluesFound = true;
+		
+		//Will only occur after all major clues found and will cycle only once
+		if(majorCluesFound == true && gameData.jasonNoteDialogue == false) {
+			switch(jasonDialogueNum) {
+				case 1: super.clueClick(clueFile, event, "J3", jasonButton, gameData, clueTextDisplay);
+						jasonDialogueNum++;
+						break;
+						
+				case 2: super.clueClick(clueFile, event, "J4", jasonButton, gameData, clueTextDisplay);
+						jasonDialogueNum++;
+						break;
+						
+				case 3:	super.clueClick(clueFile, event, "J5", jasonButton, gameData, clueTextDisplay);
+						jasonDialogueNum = 1;
+						gameData.jasonNoteDialogue = true;
+						break;
+				
+				default: jasonDialogueNum = 1;
+						 break;
+			}
+		} 		  
+		else if(catClue == true) {
 			 super.clueClick(clueFile, event, "J2", jasonButton, gameData, clueTextDisplay);
 			 catClue = false;
 		 }
