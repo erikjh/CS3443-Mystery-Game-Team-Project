@@ -51,7 +51,7 @@ public abstract class AbstractSceneSwitchController {
 		if(event.getSource() == click) {
 			for(String index : gameData.getGameDialogue()) {
 				if (index.startsWith(inputString, 0)) {
-					String[] tempString = index.split(",");
+					String[] tempString = index.split(";");
 					text.setText(tempString[1]);
 				}
 			}
