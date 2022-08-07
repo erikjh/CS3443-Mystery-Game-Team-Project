@@ -7,6 +7,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
+
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
 import java.util.HashSet;
 
 public class GameData {
@@ -19,6 +23,13 @@ public class GameData {
 	private String gameDialogueFilePath;
 	private ArrayList<String> gameDialogue = new ArrayList<String>();
 	private boolean audioStarted = false;
+
+	
+	//Clues that will unlock additional dialogue
+    public int bloodClueFound = 0;
+    public int noteClueFound = 0;
+    public int gunClueFound = 0;
+	
 	
 	public GameData() {
 		try {
@@ -72,6 +83,12 @@ public class GameData {
 	
 	public void setAudioStarted(boolean audioStarted) {
 		this.audioStarted = audioStarted;
+	}
+	
+	public int getCluesFound(){
+		
+		return bloodClueFound + noteClueFound + gunClueFound;
+		
 	}
 
 	//Loads in characters to the gameCharacter ArrayList with a file given by the user
@@ -136,6 +153,7 @@ public class GameData {
 		}
 		br.close();
 	}
+	
 
 	@Override
 	public String toString() {

@@ -84,13 +84,21 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	
 	//Game's clue methods
 	public void clueClick(ActionEvent event) throws IOException{
-		super.clueClick(clueFile, event, "B", bloodButton, gameData, clueTextDisplay);
-		super.clueClick(clueFile, event, "G", gunButton, gameData, clueTextDisplay);
-		//super.clueClick(clueFile, event, "N", noteButton, gameData, clueTextDisplay);
+		if(event.getSource() == bloodButton) {
+			gameData.bloodClueFound = 1;
+			super.majorClueClick(clueFile, event, "B", bloodButton, gameData, clueTextDisplay,gameData.getCluesFound());
+		}
+		else{
+			gameData.gunClueFound = 1;
+			super.majorClueClick(clueFile, event, "G", gunButton, gameData, clueTextDisplay,gameData.getCluesFound());
+		}
+
 		
 	}
 	//note probs need to make a noteClick like michelleClick
 	public void noteClick(ActionEvent event) throws IOException{
+		gameData.noteClueFound = 1;
+		
 		if(noteNum == 1)
 			super.clueClick(clueFile, event, "N1", noteButton, gameData, clueTextDisplay);
 		else if(noteNum == 2)
@@ -98,7 +106,8 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 		else if(noteNum == 3)
 			super.clueClick(clueFile, event, "N3", noteButton, gameData, clueTextDisplay);
 		else {
-			super.clueClick(clueFile, event, "N4", noteButton, gameData, clueTextDisplay);
+			gameData.noteClueFound = 1;
+			super.majorClueClick(clueFile, event, "N4", noteButton, gameData, clueTextDisplay, gameData.getCluesFound());
 			noteNum = 0;
 		}
 		noteNum++;

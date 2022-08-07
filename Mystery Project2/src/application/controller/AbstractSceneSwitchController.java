@@ -57,4 +57,16 @@ public abstract class AbstractSceneSwitchController {
 			}
 		}
 	}
+	
+	public void majorClueClick(String file, ActionEvent event, String inputString, Button click, GameData gameData, Text text, int majorClueCount) throws IOException {
+		gameData.loadGameDialogue(file);
+		if(event.getSource() == click) {
+			for(String index : gameData.getGameDialogue()) {
+				if (index.startsWith(inputString, 0)) {
+					String[] tempString = index.split(";");
+					text.setText(tempString[1] + "\n- Major Clue Found: " + majorClueCount + "/3 -");
+				}
+			}
+		}
+	}
 }
