@@ -7,14 +7,30 @@ import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
+import javafx.scene.text.Text;
 
 
 public class HomeEntranceController extends AbstractSceneSwitchController implements Initializable {
-	
+	//Clue variables
+	@FXML
+	private Button michelleButton;
+	@FXML
+    private Button bloodButton;
+    @FXML
+    private Button noteButton;
+    @FXML
+    private Button gunButton;
+    @FXML
+    private Text clueTextDisplay;
+    private String clueFile = "GameDialogue/HomeEntranceClues.txt";
+    private int dialogueNum = 1;
+    
 	// music variables
 	private String musicFile;
 	private Media media;
@@ -41,6 +57,8 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 		super.sceneSound("door");
 	}
 	
+	
+	
 	// This method is called upon fxml load
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -62,4 +80,25 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	    	startGameMedia.play();
 		}
     }
+	
+	//Game's clue methods
+	public void clueClick(ActionEvent event) throws IOException{
+		super.clueClick(clueFile, event, "B", bloodButton, gameData, clueTextDisplay);
+		super.clueClick(clueFile, event, "G", gunButton, gameData, clueTextDisplay);
+		super.clueClick(clueFile, event, "N", noteButton, gameData, clueTextDisplay);
+	}
+	
+	public void michelleClick(ActionEvent event) throws IOException{
+			if(dialogueNum == 1)
+				super.clueClick(clueFile, event, "M1", michelleButton, gameData, clueTextDisplay);
+			else if(dialogueNum == 2)
+				super.clueClick(clueFile, event, "M2", michelleButton, gameData, clueTextDisplay);
+			else if(dialogueNum == 3)
+				super.clueClick(clueFile, event, "M3", michelleButton, gameData, clueTextDisplay);
+			else {
+				super.clueClick(clueFile, event, "M4", michelleButton, gameData, clueTextDisplay);
+				dialogueNum = 0;
+			}
+			dialogueNum++;
+	}
 }

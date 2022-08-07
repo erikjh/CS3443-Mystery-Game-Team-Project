@@ -12,7 +12,11 @@ import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 
 public class Bedroom1Controller extends AbstractSceneSwitchController {
-	 	@FXML
+    
+    	@FXML
+    	private Button judyButton;
+	
+		@FXML
 	    private Button paintingButton;
 
 	    @FXML
@@ -20,10 +24,13 @@ public class Bedroom1Controller extends AbstractSceneSwitchController {
 
 	    @FXML
 	    private Button orangeCatButton;
+
 	    
 	    @FXML
 	    private Text clueTextDisplay;
 	    private String clueFile = "GameDialogue/Bedroom1Clues.txt";
+	    private int dialogueNum = 1;
+	    private boolean catClue = false;
 	
 	//Get instance of GameData to share between scenes
 	private GameData gameData = GameData.getInstance();
@@ -35,9 +42,25 @@ public class Bedroom1Controller extends AbstractSceneSwitchController {
 	public void clueClick(ActionEvent event) throws IOException{
 		super.clueClick(clueFile, event, "P", paintingButton, gameData, clueTextDisplay);
 		super.clueClick(clueFile, event, "F", fakeWillButton, gameData, clueTextDisplay);
-		super.clueClick(clueFile, event, "O", orangeCatButton, gameData, clueTextDisplay);
 	}
 	
-	
-
+	public void judyClick(ActionEvent event) throws IOException{
+		  
+		 if(catClue == true) {
+			 super.clueClick(clueFile, event, "J3", judyButton, gameData, clueTextDisplay);
+			 catClue = false;
+		 }
+		 else if(dialogueNum == 1) {
+			super.clueClick(clueFile, event, "J1", judyButton, gameData, clueTextDisplay);
+			dialogueNum = 2;
+		  }
+		  else {
+			super.clueClick(clueFile, event, "J2", judyButton, gameData, clueTextDisplay);
+			dialogueNum = 1;
+		  }
+	}
+	public void catClick(ActionEvent event) throws IOException{
+		catClue = true;
+		super.clueClick(clueFile, event, "O", orangeCatButton, gameData, clueTextDisplay);
+	}
 }
