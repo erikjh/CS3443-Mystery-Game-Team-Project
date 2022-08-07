@@ -41,7 +41,7 @@
       <Button fx:id="jasonButton" layoutX="615.0" layoutY="250.0" mnemonicParsing="false" onAction="#jasonClick" opacity="0.0" prefHeight="488.0" prefWidth="85.0" text="K Jason" textFill="TRANSPARENT" />
       <Button fx:id="freezerButton" layoutX="750.0" layoutY="238.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="97.0" prefWidth="50.0" text="K Open Freezer" textFill="TRANSPARENT" />
       <Rectangle arcHeight="5.0" arcWidth="5.0" height="118.0" layoutY="701.0" stroke="BLACK" strokeType="INSIDE" width="814.0" />
-      <Text fx:id="clueTextDisplay" fill="WHITE" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" wrappingWidth="800.0000104308128">
+      <Text fx:id="clueTextDisplay" fill="WHITE" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="800.0000104308128">
          <font>
             <Font name="Book Antiqua" size="20.0" />
          </font></Text>
