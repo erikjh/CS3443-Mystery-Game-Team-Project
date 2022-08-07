@@ -2,9 +2,11 @@ package application.model;
 
 import java.util.ArrayList;
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.HashSet;
 
 public class GameData {
@@ -12,14 +14,19 @@ public class GameData {
 	//creates and sets instance of GameData to share between scenes
 	private static final GameData instance  = new GameData();
 	
-	private ArrayList<Character> gameCharacters = new ArrayList<Character>();
+	private ArrayList<Characters> gameCharacters = new ArrayList<Characters>();
 	private String characterCSVFilePath;
 	private String gameDialogueFilePath;
 	private ArrayList<String> gameDialogue = new ArrayList<String>();
 	private boolean audioStarted = false;
 	
 	public GameData() {
-		
+		try {
+			loadCharacterData("CharacterData/Character1.csv");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	
@@ -27,11 +34,11 @@ public class GameData {
 		return instance;
 	}
 	
-	public ArrayList<Character> getGameCharacters() {
+	public ArrayList<Characters> getGameCharacters() {
 		return gameCharacters;
 	}
 
-	public void setGameCharacters(ArrayList<Character> gameCharacters) {
+	public void setGameCharacters(ArrayList<Characters> gameCharacters) {
 		this.gameCharacters = gameCharacters;
 	}
 
@@ -68,7 +75,31 @@ public class GameData {
 	}
 
 	//Loads in characters to the gameCharacter ArrayList with a file given by the user
-	public void loadCharacterData(String file) throws IOException{
+	public void loadCharacterData(String fileName) throws IOException{
+		File file = new File(fileName);
+		Scanner fileScanner = new Scanner(file);
+		boolean guilt;
+		
+
+		BufferedReader br = new BufferedReader(new FileReader(file));
+		String buffer = "";
+		
+		while((buffer = br.readLine()) != null) {
+				String[] data = buffer.split(",");
+				if(data[1] == "guilty")
+					guilt = true;
+				else 
+					guilt = false;
+				
+				Characters c = new Characters(data[0], guilt);
+				
+				gameCharacters.add(c);
+		}
+		
+		br.close();	
+		fileScanner.close();
+		
+	/*	
 		this.characterCSVFilePath = file;
 		String line;
 		BufferedReader br = new BufferedReader(new FileReader(file));
@@ -94,6 +125,7 @@ public class GameData {
 			}
 		}
 		br.close();
+		*/
 	}
 	public void loadGameDialogue(String file) throws IOException {
 		this.gameDialogueFilePath = file;

@@ -1,19 +1,16 @@
 package application.model;
 
-public class Character {
+public class Characters {
 	private String name;
 	//private int age;
 	//private String relation;
 	private boolean guilty;
 	
-	public Character(String name, int age, String relation, boolean guilty) {
+	public Characters(String name, boolean guilty) {
 		this.name = name;
 		//this.age = age;
 		//this.relation = relation;
 		this.guilty = guilty;
-	}
-	public Character() {
-		
 	}
 
 	public String getName() {
