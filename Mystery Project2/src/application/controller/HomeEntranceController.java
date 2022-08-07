@@ -30,6 +30,7 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
     private Text clueTextDisplay;
     private String clueFile = "GameDialogue/HomeEntranceClues.txt";
     private int dialogueNum = 1;
+    private int noteNum = 1;
     
 	// music variables
 	private String musicFile;
@@ -85,8 +86,24 @@ public class HomeEntranceController extends AbstractSceneSwitchController implem
 	public void clueClick(ActionEvent event) throws IOException{
 		super.clueClick(clueFile, event, "B", bloodButton, gameData, clueTextDisplay);
 		super.clueClick(clueFile, event, "G", gunButton, gameData, clueTextDisplay);
-		super.clueClick(clueFile, event, "N", noteButton, gameData, clueTextDisplay);
+		//super.clueClick(clueFile, event, "N", noteButton, gameData, clueTextDisplay);
+		
 	}
+	//note probs need to make a noteClick like michelleClick
+	public void noteClick(ActionEvent event) throws IOException{
+		if(noteNum == 1)
+			super.clueClick(clueFile, event, "N1", noteButton, gameData, clueTextDisplay);
+		else if(noteNum == 2)
+			super.clueClick(clueFile, event, "N2", noteButton, gameData, clueTextDisplay);
+		else if(noteNum == 3)
+			super.clueClick(clueFile, event, "N3", noteButton, gameData, clueTextDisplay);
+		else {
+			super.clueClick(clueFile, event, "N4", noteButton, gameData, clueTextDisplay);
+			noteNum = 0;
+		}
+		noteNum++;
+	}
+
 	
 	public void michelleClick(ActionEvent event) throws IOException{
 			if(dialogueNum == 1)

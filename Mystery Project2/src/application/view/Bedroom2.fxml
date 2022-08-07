@@ -26,14 +26,10 @@
             <Image url="@../../../Images/William.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="301.0" layoutY="744.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
-      <Button layoutX="312.0" layoutY="755.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61571a" />
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c476b4" height="88.0" layoutX="241.0" layoutY="52.0" stroke="#61581b" strokeType="INSIDE" strokeWidth="10.0" width="299.0" />
-      <Label layoutX="266.0" layoutY="60.0" text="BEDROOM TWO" textAlignment="CENTER" textFill="WHITE">
+      <Button layoutX="309.0" layoutY="666.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textAlignment="CENTER">
          <font>
-            <Font name="Chiller" size="50.0" />
-         </font>
-      </Label>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font></Button>
       <ImageView fitHeight="72.0" fitWidth="96.0" layoutX="421.0" layoutY="408.0">
          <image>
             <Image url="@../../../Images/580b57fbd9996e24bc43bb96.png" />
@@ -54,6 +50,16 @@
       <Button fx:id="williamButton" layoutX="211.0" layoutY="274.0" mnemonicParsing="false" onAction="#williamClick" opacity="0.0" prefHeight="460.0" prefWidth="119.0" text="B2 William" textFill="TRANSPARENT" />
       <Button fx:id="grayCatButton" layoutX="428.0" layoutY="412.0" mnemonicParsing="false" onAction="#grayCatClick" opacity="0.0" prefHeight="72.0" prefWidth="96.0" text="B2 Gray Kitten" textFill="TRANSPARENT" />
       <Button fx:id="realWillButton" layoutX="759.0" layoutY="608.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="31.0" prefWidth="42.0" text="B2 Real Will" textFill="TRANSPARENT" />
-      <Text fx:id="clueTextDisplay" layoutX="104.0" layoutY="722.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="572.13671875" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="118.0" layoutY="701.0" stroke="BLACK" strokeType="INSIDE" width="814.0" />
+      <Text fx:id="clueTextDisplay" fill="WHITE" layoutY="761.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="800.0000104904175">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font></Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b998b5" height="103.0" layoutX="203.0" layoutY="36.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="409.0" />
+      <Label layoutX="247.0" layoutY="42.0" text="BEDROOM TWO" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="64.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

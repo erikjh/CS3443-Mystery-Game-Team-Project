@@ -1,7 +1,7 @@
 B ,Black cat: *purr*
-F ,In the freezer there is a bottle of wine that’s not really cold…it was put in here recently…is someone celebrating…
+F ,In the freezer there is a bottle of wine that's not really cold...it was put in here recently is someone celebrating?
 W ,Hmm, looks like the stove is still warm....
-S1 ,Samson: *looks over at Jason* "Well I was here in the kitchen getting a snack…"
+S1 ,Samson: *looks over at Jason* "Well I was here in the kitchen getting a snack"
 S2 ,Samson: "That cat is never that nice, lucky you."
-J1 ,Jason: *glares at Samson* "We were both here in the kitchen around that time, I came in while he *glares at Samson* was poking his nose around here…"
+J1 ,Jason: *glares at Samson* "We were both here in the kitchen around that time, I came in while he *glares at Samson* was poking his nose around here"
 J2 ,Jason: "Oh Little Void is such a sweetie pie! She named this one Little Void since it always disappears in the shadows. Have you met the gray little poof yet? Sweeter than sugar!"

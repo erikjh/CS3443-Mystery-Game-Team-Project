@@ -1,7 +1,10 @@
-B ,The blood splatter direction doesn’t align with the way Michelle’s body is laying…you should dig deeper into this…
-G ,The bullet exit wound is on her forehead…it would've been pretty difficult for her to shoot herself from behind.
-N ,Suicide Note: "I CAN’T TAKE THIS ANYMORE! THIS HOUSE, MY JOB, THIS LIFE IT’S TOO MUCH STRESS TO BARE! THE NOVELS I DREAMED OF WRITING…I WANTED TO BE A NY BESTSELLING AUTHOR…now…well it’s not like I ever would have made it…fairwell cruel world…"
-M1 ,“…”
-M2 ,“…need I say more…”
-M3 ,“…why are you proding a dead woman…”
-M4 ,“…the dead can’t speak…let her rest in peace…”
+B ,The blood splatter direction doesn't align with the way Michelle's body is laying...you should dig deeper into this...
+G ,The bullet exit wound is on her forehead...it would've been pretty difficult for her to shoot herself from behind.
+N1 ,Suicide Note: "I CAN'T TAKE THIS ANYMORE!(1/4)
+N2 ,THIS HOUSE, MY JOB, THIS LIFE IT'S TOO MUCH STRESS TO BARE!(2/4)
+N3 ,THE NOVELS I DREAMED OF WRITING...I WANTED TO BE A NY BESTSELLING AUTHOR(3/4)
+N4 ,...now...well its not like I ever would have made it...fairwell cruel world"(4/4)
+M1 ,...
+M2 ,...need I say more...
+M3 ,...why are you prodding a dead woman???
+M4 ,...the dead can't speak...let her rest in peace...

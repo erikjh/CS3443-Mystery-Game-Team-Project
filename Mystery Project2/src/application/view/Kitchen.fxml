@@ -16,13 +16,6 @@
             <Image url="@../../../Images/Kitchen%20resized.png" />
          </image>
       </ImageView>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c476b4" height="88.0" layoutX="281.0" layoutY="47.0" stroke="#61581b" strokeType="INSIDE" strokeWidth="10.0" width="199.0" />
-      <Label layoutX="301.0" layoutY="55.0" text="KITCHEN" textFill="WHITE">
-         <font>
-            <Font name="Chiller" size="50.0" />
-         </font>
-      </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0c475" height="53.0" layoutX="316.0" layoutY="735.0" stroke="#61571a" strokeType="INSIDE" strokeWidth="5.0" width="180.0" />
       <ImageView fitHeight="238.0" fitWidth="403.0" layoutX="124.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../Images/Samson.png" />
@@ -33,7 +26,10 @@
             <Image url="@../../../Images/Jason.png" />
          </image>
       </ImageView>
-      <Button layoutX="327.0" layoutY="746.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE" textFill="#61581a" />
+      <Button layoutX="310.0" layoutY="664.0" mnemonicParsing="false" onAction="#switchToEntrance" text="BACK TO ENTRANCE">
+         <font>
+            <Font name="Book Antiqua Bold" size="15.0" />
+         </font></Button>
       <ImageView fitHeight="46.0" fitWidth="60.0" layoutX="188.0" layoutY="369.0">
          <image>
             <Image url="@../../../Images/580b57fbd9996e24bc43bb8a.png" />
@@ -44,6 +40,16 @@
       <Button fx:id="warmStoveButton" layoutX="428.0" layoutY="401.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="46.0" prefWidth="139.0" text="K Warm Stove" textFill="TRANSPARENT" />
       <Button fx:id="jasonButton" layoutX="615.0" layoutY="250.0" mnemonicParsing="false" onAction="#jasonClick" opacity="0.0" prefHeight="488.0" prefWidth="85.0" text="K Jason" textFill="TRANSPARENT" />
       <Button fx:id="freezerButton" layoutX="750.0" layoutY="238.0" mnemonicParsing="false" onAction="#clueClick" opacity="0.0" prefHeight="97.0" prefWidth="50.0" text="K Open Freezer" textFill="TRANSPARENT" />
-      <Text fx:id="clueTextDisplay" layoutX="186.0" layoutY="638.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="461.13671875" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="118.0" layoutY="701.0" stroke="BLACK" strokeType="INSIDE" width="814.0" />
+      <Text fx:id="clueTextDisplay" fill="WHITE" layoutY="760.0" strokeType="OUTSIDE" strokeWidth="0.0" text="test" textAlignment="CENTER" wrappingWidth="800.0000104308128">
+         <font>
+            <Font name="Book Antiqua" size="20.0" />
+         </font></Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b7b998b5" height="103.0" layoutX="196.0" layoutY="40.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="10.0" width="409.0" />
+      <Label layoutX="293.0" layoutY="39.0" text="KITCHEN" textFill="WHITE">
+         <font>
+            <Font name="Chiller" size="75.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
