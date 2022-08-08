@@ -2,7 +2,14 @@
 ## Repo for the Mystery Gang in CS3443 (Summer 2022)
 
 ## General Information
-This is a simple JavaFX murder mystery game, where the user explores the murder scene, discover clues, question suspects, all with the goal of figuring out who is guilty of the murder. This project is our course group project all done within the Eclipse IDE.
+This is a simple JavaFX murder mystery game, where the user explores the scene of a murder, discovers clues, questions suspects, all with the goal of figuring out who is the murderer. <br /> 
+This project is our course group project all done within the Eclipse IDE.
+
+## Group Members
+* Clowey Adams - Team Captain <br />
+* David Chenevert - Member <br />
+* Erik Hernandez - Member <br />
+* Miguel Rodriguez - Member <br />
 
 ## Tools & Versions used
 * JavaSE-1.8
@@ -15,4 +22,7 @@ This is a simple JavaFX murder mystery game, where the user explores the murder 
 File > Import > General > Archive File > *select archvied file of repository* > *select folder to import into* > finish
 ## Installation using Git
 File > Import > Git > Projects from Git > Clone URI > https://github.com/erikjh/CS3443-Mystery-Game-Team-Project.git (this link can be found on the repository under code) > login using github credentials
+
+After importing from Git, you will right click the project under Git Repositories > Import Projects > Finish. <br />
+Then you will click Mystery Project2 > src > Main.java > click the green run button
 
