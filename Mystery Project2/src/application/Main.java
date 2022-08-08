@@ -12,6 +12,9 @@ import java.io.IOException;
 
 public class Main extends Application {
 	@Override
+	/*
+	 * opens the app, sets size, title, and loads icon.
+	 */
 	public void start(Stage primaryStage) {
 		try {
 			Parent root = FXMLLoader.load(getClass().getResource("/application/view/MainMenu1.fxml"));

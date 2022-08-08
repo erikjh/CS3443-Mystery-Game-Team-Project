@@ -11,9 +11,22 @@ import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 
+/**
+ * Bathroom controller that handles changing scenes from the 
+ * bathroom as well as all the clues contained in
+ * the bathroom.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class BathroomController extends AbstractSceneSwitchController {
 		@FXML
 	    private Text clueTextDisplay;
+		
 		@FXML
 	    private Button pictureButton;
 
@@ -33,32 +46,7 @@ public class BathroomController extends AbstractSceneSwitchController {
 		super.sceneSwitcher(event, "/application/view/HomeEntrance.fxml");
 		super.sceneSound("door");
 	}
-	/*public void clueClick(ActionEvent event) throws IOException {
-		gameData.loadGameDialogue("GameDialogue/BathroomClues.txt");
-		
-		if(event.getSource() == manuscriptButton) {
-			for(String index : gameData.getGameDialogue()) {
-				if (index.startsWith("M", 0)) {
-					String[] tempString = index.split(",");
-					clueTextDisplay.setText(tempString[1]);
-				}
-			}
-		}else if(event.getSource() == pictureButton) {
-			for(String index : gameData.getGameDialogue()) {
-				if (index.startsWith("P", 0)) {
-					String[] tempString = index.split(",");
-					clueTextDisplay.setText(tempString[1]);
-				}
-			}
-		}else if(event.getSource() == fingerPrintButton) {
-			for(String index : gameData.getGameDialogue()) {
-				if (index.startsWith("F", 0)) {
-					String[] tempString = index.split(",");
-					clueTextDisplay.setText(tempString[1]);
-				}
-			}
-		}
-	}*/
+	
 	public void clueClick(ActionEvent event) throws IOException{
 		super.clueClick(clueFile, event, "M", manuscriptButton, gameData, clueTextDisplay);
 		super.clueClick(clueFile, event, "P", pictureButton, gameData, clueTextDisplay);

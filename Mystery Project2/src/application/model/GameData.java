@@ -13,6 +13,21 @@ import javafx.scene.control.Button;
 
 import java.util.HashSet;
 
+/**
+ * The GameData class creates instances of GameData
+ * to share between scenes, keeping track of clues and
+ * dialogue the player has already looked at, which will
+ * then unlock additional information. It also
+ * loads in the character data to the
+ * game character array list.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class GameData {
 	
 	//creates and sets instance of GameData to share between scenes
@@ -121,33 +136,6 @@ public class GameData {
 		br.close();	
 		fileScanner.close();
 		
-	/*	
-		this.characterCSVFilePath = file;
-		String line;
-		BufferedReader br = new BufferedReader(new FileReader(file));
-		Random rand = new Random();
-		HashSet<String> characterHash= new HashSet<String>();
-		ArrayList<String> characterList = new ArrayList<String>();
-		while((line = br.readLine()) != null){
-			characterList.add(line);
-			String[] tempString = line.split(",");
-			characterHash.add(tempString[2]);
-			
-		}	
-		int i = 0;
-		while( i < characterHash.size()) {
-		int random = rand.nextInt(characterList.size());
-		String[] characterString = characterList.get(random).split(",");
-			if(characterHash.contains(characterString[2])) {
-				int age = Integer.parseInt(characterString[1]); 
-				boolean guilty = false;//initializing all characters to be not guilty
-				Character tempCharacterNew = new Character(characterString[0], age, characterString[2], guilty);
-				gameCharacters.add(tempCharacterNew);
-				characterHash.remove(characterString[2]);
-			}
-		}
-		br.close();
-		*/
 	}
 	public void loadGameDialogue(String file) throws IOException {
 		this.gameDialogueFilePath = file;

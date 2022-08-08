@@ -11,6 +11,18 @@ import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 
+/**
+ * Kitchen controller that handles changing scenes from the 
+ * kitchen as well as all the clues contained in
+ * the kitchen.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class KitchenController extends AbstractSceneSwitchController {
 	@FXML
 	private Button jasonButton;

@@ -11,6 +11,18 @@ import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 
+/**
+ * Bedroom 1 controller that handles changing scenes from the 
+ * bedroom as well as all the clues contained in
+ * the bedroom.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class Bedroom1Controller extends AbstractSceneSwitchController {
     
     	@FXML

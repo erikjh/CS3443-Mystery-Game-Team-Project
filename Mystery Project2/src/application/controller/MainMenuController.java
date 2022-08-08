@@ -1,34 +1,37 @@
 package application.controller;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.Paths;
 import java.util.ResourceBundle;
-
 import application.model.GameData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TextArea;
 import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
-import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
-import javafx.stage.Stage; 
+
+/**
+ * Main Menu controller that handles the opening instructions,
+ * loads in and plays the Main Menu background audio,
+ * and also allows the play to begin the game.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
 
 public class MainMenuController extends AbstractSceneSwitchController implements Initializable {
 		private GameData gameData = GameData.getInstance();
 		
 		@FXML
-	    private Button nextButton;
+	    private Button nextButton;	
 	    @FXML
-	    private Text instructionText;
+	    private Text instructionText;	 
 	    @FXML
 	    private Button beginGameButton;
 	    private int count = 0;

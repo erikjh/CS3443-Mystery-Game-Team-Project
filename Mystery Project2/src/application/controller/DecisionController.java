@@ -11,18 +11,36 @@ import javafx.scene.media.AudioClip;
 import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 
+/**
+ * Decision controller that handles the
+ * user decision. Showing the good ending or bad ending
+ * depending on what character the user believes is
+ * the murderer.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class DecisionController extends AbstractSceneSwitchController {
 
 		@FXML
 	    private Button samsonButton;
+		
 	    @FXML
 	    private Button jasonButton;
+	    
 	    @FXML
 	    private Button junieButton;
+	    
 	    @FXML
 	    private Button williamButton;
+	    
 	    @FXML
 	    private Button judyButton;
+	    
 	    @FXML
 	    private Button voidButton;
 	

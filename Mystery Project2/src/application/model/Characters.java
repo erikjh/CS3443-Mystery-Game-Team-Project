@@ -1,15 +1,22 @@
 package application.model;
 
+/**
+ * The characters class that sets the attributes
+ * to the characters in the game.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
+
 public class Characters {
 	private String name;
-	//private int age;
-	//private String relation;
 	private boolean guilty;
 	
 	public Characters(String name, boolean guilty) {
 		this.name = name;
-		//this.age = age;
-		//this.relation = relation;
 		this.guilty = guilty;
 	}
 
@@ -21,23 +28,6 @@ public class Characters {
 		this.name = name;
 	}
 
-/*	
-	public int getAge() {
-		return age;
-	}
-
-	public void setAge(int age) {
-		this.age = age;
-	}
-
-	public String getRelation() {
-		return relation;
-	}
-
-	public void setRelation(String relation) {
-		this.relation = relation;
-	}
-*/
 	public boolean isGuilty() {
 		return guilty;
 	}
@@ -45,11 +35,5 @@ public class Characters {
 	public void setGuilty(boolean guilty) {
 		this.guilty = guilty;
 	}
-/*	
-	@Override
-	public String toString() {
-		return getRelation();
-	}
-*/	
 
 }

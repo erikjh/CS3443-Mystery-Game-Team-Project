@@ -15,6 +15,17 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Text;
 
+/**
+ * Home entrance controller that handles changing to all the different
+ * rooms, handles the clues in the home entrance, and also initializes
+ * and plays the background audio for the game. 
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
 
 public class HomeEntranceController extends AbstractSceneSwitchController implements Initializable {
 	//Clue variables

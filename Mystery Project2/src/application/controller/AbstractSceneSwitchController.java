@@ -2,7 +2,6 @@ package application.controller;
 
 import java.io.IOException;
 import java.nio.file.Paths;
-
 import application.model.GameData;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -15,6 +14,17 @@ import javafx.scene.media.Media;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
+/**
+ * Abstract controller for switching scenes.
+ * Also contains methods for triggering the sound
+ * effects when switching scenes.
+ * 
+ * @author Clowey Adams
+ * @author David Chenevert
+ * @author Erik Hernandez
+ * @author Miguel Rodriguez
+ *
+ */
 
 public abstract class AbstractSceneSwitchController {
 	
@@ -36,12 +46,14 @@ public abstract class AbstractSceneSwitchController {
 			String musicFile = "Audio/footsteps.mp3";
 			Media media = new Media(Paths.get(musicFile).toUri().toString());
 			AudioClip footstepsKitchen = new AudioClip(media.getSource());
+			footstepsKitchen.setVolume(0.4);
 			footstepsKitchen.play();
 		//door sound effect
 		}else if(sound.equals("door")) {
 			String musicFile = "Audio/dooropen.mp3";
 			Media media = new Media(Paths.get(musicFile).toUri().toString());
 			AudioClip doorOpen = new AudioClip(media.getSource());
+			doorOpen.setVolume(0.2);
 			doorOpen.play();
 			
 		}
