@@ -5,6 +5,16 @@
 This is a simple JavaFX murder mystery game, where the user explores the scene of a murder, discovers clues, questions suspects, all with the goal of figuring out who is the murderer. <br /> 
 This project is our course group project all done within the Eclipse IDE.
 
+## Purpose 
+This a murder mystery game intended to provide players and fans of the genre with an interactive experience, for their own personal enjoyment, <br />
+while also strengthening their problem solving skills as they try to figure out who the murderer is!
+
+## Key Features
+* Ability to switch back and forth between different rooms <br />
+* Click all over the rooms to find hidden clues that each have their own unique dialogue. <br />
+* Click on characters to question them, and see what they have to say. <br />
+* The ability to choose who you believe the murderer is once you have found all the clues and feel you're ready to make a decision. <br />
+
 ## Group Members
 * Clowey Adams - Team Captain <br />
 * David Chenevert - Member <br />
