@@ -1,15 +1,15 @@
-# CS3443 Mystery Game Team Project
-## Repo for the Mystery Gang in CS3443 (Summer 2022)
+CS3443 Mystery Game Team Project
+Repo for the Mystery Gang in CS3443 (Summer 2022)
 
 ## General Information
 This is a simple JavaFX murder mystery game, where the user explores the scene of a murder, discovers clues, questions suspects, all with the goal of figuring out who is the murderer. <br /> 
 This project is our course group project all done within the Eclipse IDE.
 
 ## Group Members
-* Clowey Adams - Team Captain <br />
-* David Chenevert - Member <br />
-* Erik Hernandez - Member <br />
-* Miguel Rodriguez - Member <br />
+* Clowey Adams - Team Captain 
+* David Chenevert - Member 
+* Erik Hernandez - Member 
+* Miguel Rodriguez - Member 
 
 ## Tools & Versions used
 * JavaSE-1.8
